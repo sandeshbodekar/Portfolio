@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Sandesh - Portfolio</title>
+  <meta name="description"
+    content="Portfolio of Sandesh Bodekar, a third-semester Computer Science student in Pune, India, building accessible web projects and learning in public." />
+  <meta name="author" content="Sandesh Bodekar" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://example.com/index.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Sandesh - Portfolio" />
+  <meta property="og:description"
+    content="Portfolio of Sandesh Bodekar, a third-semester Computer Science student in Pune, India, building accessible web projects and learning in public." />
+  <meta property="og:url" content="https://example.com/index.html" />
+  <meta property="og:image" content="https://example.com/assets/img/og-cover.jpg" />
+  <meta property="og:locale" content="en_IN" />
+
+  <!-- Twitter card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Sandesh Bodekar — Computer Science Student & Web Developer" />
+  <meta name="twitter:description"
+    content="Portfolio of Sandesh Bodekar, a third-semester Computer Science student in Pune, India, building accessible web projects and learning in public." />
+  <meta name="twitter:image" content="https://example.com/assets/img/og-cover.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=IBM+Plex+Mono:wght@500&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+
+  <!-- Structured data for search engines -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Sandesh Bodekar",
+    "jobTitle": "Computer Science Student",
+    "url": "https://example.com/index.html",
+    "sameAs": [
+      "https://https://github.com/sandeshbodekar",
+      "https://www.linkedin.com/in/sandeshbodekar"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="site-logo" href="index.html">sandesh<span>.</span>dev</a>
+
+      <button type="button" class="nav-toggle" aria-expanded="true" aria-controls="primary-nav">
+        Menu
+      </button>
+
+      <nav class="primary-nav" id="primary-nav" data-open="true" aria-label="Primary">
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="wrap hero__inner">
+        <div>
+           <h1 id="hero-heading">Sandesh Bodekar</h1>
+          <p class="hero__lede">
+            I build small, well-structured web projects using MERN stack while I learn — currently in
+            my third semester 2nd year, most interested in accessible front-end code and
+            the systems that sit underneath it.
+          </p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="projects.html">View my projects</a>
+            <a class="button button--ghost" href="resume.html">See my resume</a>
+          </div>
+        </div>
+        <img class="photo" src="assets/LinkedinPhoto.png" alt="sandesh's photo" width="300" height="300" />
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="about-heading">
+      <div class="wrap">
+        <h2 id="about-heading">About</h2>
+        <p>
+          I'm a Computer Science undergraduate based in Pune, India, currently
+          in my third semester. Outside of coursework I practice building
+          real, working things — a few course projects, a couple of personal
+          tools, and this site itself, which doubles as my sandbox for
+          learning semantic HTML and accessibility standards properly.
+        </p>
+        <p>
+          I care about writing markup that works for everyone, including
+          people using screen readers, keyboard-only navigation, user feriendly UI and client requirements
+          — not just about how a page looks.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="featured-heading">
+      <div class="wrap">
+        <div class="section__head">
+          <h2 id="featured-heading">Featured projects</h2>
+          <a href="projects.html">View all projects →</a>
+        </div>
+
+        <ul class="card-grid">
+          <li>
+            <article class="card">
+              <h3><a href="projects.html#campus-events">A basic calculator</a></h3>
+              <p>A small application for calculating college accademic stuffs, built to practice JavaScript events
+                and DOM elements .</p>
+              <ul class="tag-list" aria-label="Technologies used">
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+              <a class="card__link" href="projects.html#campus-events">Read more about this project</a>
+            </article>
+          </li>
+          <li>
+            <article class="card">
+              <h3><a href="projects.html#study-tracker">Wheather application</a></h3>
+              <p>A lightweight tool for monitoring and checking wheather report, with a keyboard-friendly interface and
+                API integration.</p>
+              <ul class="tag-list" aria-label="Technologies used">
+                <li>JavaScript</li>
+                <li>API</li>
+              </ul>
+              <a class="card__link" href="projects.html#study-tracker">Read more about this project</a>
+            </article>
+          </li>
+          <li>
+            <article class="card">
+              <h3><a href="projects.html#this-site">This Portfolio</a></h3>
+              <p>The site you're looking at — a semantic, WCAG-conscious HTML5 skeleton built as an internship exercise.
+              </p>
+              <ul class="tag-list" aria-label="Technologies used">
+                <li>HTML5</li>
+                <li>ARIA</li>
+                <li>SEO</li>
+              </ul>
+              <a class="card__link" href="projects.html#this-site">Read more about this project</a>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="skills-heading">
+      <div class="wrap">
+        <h2 id="skills-heading">Currently learning</h2>
+        <ul class="skills">
+          <li>
+            <h3>Languages</h3>
+            <ul>
+              <li>HTML5 &amp; CSS3</li>
+              <li>JavaScript</li>
+              <li>NodeJs &amp; Express</li>
+             </ul>
+          </li>
+          <li>
+            <h3>Coursework</h3>
+            <ul>
+              <li>Data Structures</li>
+              <li>Discrete Mathematics</li>
+              <li>Computer Organization</li>
+            </ul>
+          </li>
+          <li>
+            <h3>Practices</h3>
+            <ul>
+              <li>Semantic HTML</li>
+              <li>WCAG accessibility</li>
+              <li>Git &amp; GitHub</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-nav" aria-label="Footer">
+        <small>&copy; 2026 Sandesh Bodekar &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Made with<span class="heart">
+            &hearts;</span></small>
+      </div>
+      <nav class="footer-social" aria-label="Social media">
+        <ul>
+          <li><a href="https://github.com/sandeshbodekar">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/sandeshbodekar">LinkedIn</a></li>
+          <li><a href="mailto:sandeshbodekar12@gmail.com">Email</a></li>
+        </ul>
+      </nav>
+    </div>
+
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>

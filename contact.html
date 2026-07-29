@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Contact</title>
+  <meta name="description" content="Get in touch withSandesh Bodekar via the contact form, email, or social profiles." />
+  <meta name="author" content="Sandesh Bodekar" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://example.com/contact.html" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Contact " />
+  <meta property="og:description" content="Get in touch with Sandesh Bodekar via the contact form, email, or social profiles." />
+  <meta property="og:url" content="https://example.com/contact.html" />
+  <meta property="og:image" content="https://example.com/assets/og-cover.jpg" />
+  <meta property="og:locale" content="en_IN" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Contact — Sandesh Bodekar" />
+  <meta name="twitter:description" content="Get in touch with Sandesh Bodekar via the contact form, email, or social profiles." />
+  <meta name="twitter:image" content="https://example.com/assets/og-cover.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=IBM+Plex+Mono:wght@500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+</head>
+<body>
+ 
+  <header class="site-header">
+    <div class="wrap">
+      <a class="site-logo" href="index.html">sandesh<span>.</span>dev</a>
+
+      <button type="button" class="nav-toggle" aria-expanded="true" aria-controls="primary-nav">
+        Menu
+      </button>
+
+      <nav class="primary-nav" id="primary-nav" data-open="true" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <section class="hero" aria-labelledby="page-heading">
+      <div class="wrap">
+         <h1 id="page-heading">Contact</h1>
+        <p class="hero__lede">
+          Have a question, an internship lead, or a project idea? The form
+          below reaches me directly, or use email and socials.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="contact-heading">
+      <div class="wrap form-layout">
+
+        <div>
+          <h2 id="contact-heading" class="visually-hidden">Send a message</h2>
+
+          <form id="contact-form" novalidate action="https://formsubmit.co/fullstackdsa8080@gmail.com" method="post">
+            <fieldset>
+              <legend>Your details</legend>
+
+              <div class="field">
+                <label for="name">Full name <span class="required-flag" aria-hidden="true">*</span></label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  autocomplete="name"
+                  required
+                  aria-describedby="name-error"
+                  aria-required="true"
+                />
+                <span class="error" id="name-error" role="alert"></span>
+              </div>
+
+              <div class="field">
+                <label for="email">Email address <span class="required-flag" aria-hidden="true">*</span></label>
+                <span class="hint" id="email-hint">We'll only use this to reply to you.</span>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  autocomplete="email"
+                  required
+                  aria-describedby="email-hint email-error"
+                  aria-required="true"
+                />
+                <span class="error" id="email-error" role="alert"></span>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Your message</legend>
+
+              <div class="field">
+                <label for="reason">Reason for contact</label>
+                <select id="reason" name="reason">
+                  <option value="internship">Internship or opportunity</option>
+                  <option value="project">Project collaboration</option>
+                  <option value="feedback">Feedback on this site</option>
+                  <option value="other">Something else</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="message">Message <span class="required-flag" aria-hidden="true">*</span></label>
+                <span class="hint" id="message-hint">A few sentences is plenty.</span>
+                <textarea
+                  id="message"
+                  name="message"
+                  minlength="10"
+                  required
+                  aria-describedby="message-hint message-error"
+                  aria-required="true"
+                ></textarea>
+                <span class="error" id="message-error" role="alert"></span>
+              </div>
+            </fieldset>
+
+            <button type="submit" class="button button--primary">Send message</button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+
+        <aside aria-labelledby="other-ways-heading">
+          <div class="callout">
+            <h2 id="other-ways-heading">Other ways to reach me</h2>
+            <ul>
+              <li><a href="mailto:sandeshbodekar12@gmail.com">E-mail</a></li>
+              <li><a href="https://github.com/sandeshbodekar">GitHub</a></li>
+              <li><a href="https://www.linkedin.com/in/sandeshbodekar">linkedin</a></li>
+            </ul>
+          </div>
+        </aside>
+
+      </div>
+    </section>
+
+ <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-nav" aria-label="Footer">
+        <small>&copy; 2026 Sandesh Bodekar &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Made with<span class="heart">
+            &hearts;</span></small>
+      </div>
+      <nav class="footer-social" aria-label="Social media">
+        <ul>
+          <li><a href="https://github.com/sandeshbodekar">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/sandeshbodekar">LinkedIn</a></li>
+          <li><a href="mailto:sandeshbodekar12@gmail.com">Email</a></li>
+        </ul>
+      </nav>
+    </div>
+
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

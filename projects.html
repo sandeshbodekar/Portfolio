@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Projects</title>
+  <meta name="description"
+    content="Web development projects by sandesh Bodekari, a third-semester Computer Science student, including course projects and personal tools." />
+  <meta name="author" content="sandesh Bodekar" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://example.com/projects.html" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Projects" />
+  <meta property="og:description"
+    content="Web development projects by sandesh Bodekar, a third-semester Computer Science student." />
+  <meta property="og:url" content="https://example.com/projects.html" />
+  <meta property="og:image" content="https://example.com/og-cover.jpg" />
+  <meta property="og:locale" content="en_IN" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="projects" />
+  <meta name="twitter:description"
+    content="Web development projects by sandesh Bodekar, a third-semester Computer Science student." />
+  <meta name="twitter:image" content="https://example.com/og-cover.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=IBM+Plex+Mono:wght@500&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <!-- <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />   -->
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="site-logo" href="index.html">sandesh<span>.</span>dev</a>
+
+      <button type="button" class="nav-toggle" aria-expanded="true" aria-controls="primary-nav">
+        Menu
+      </button>
+
+      <nav class="primary-nav" id="primary-nav" data-open="true" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html" aria-current="page">Projects</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <section class="hero" aria-labelledby="page-heading">
+      <div class="wrap">
+         <h1 id="page-heading">Projects</h1>
+        <p class="hero__lede">
+          A running log of course projects and personal builds, roughly in
+          order of how recently I worked on them.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="projects-list-heading">
+      <div class="wrap">
+        <h2 id="projects-list-heading" class="visually-hidden">Project list</h2>
+
+        <ul class="card-grid">
+          <li>
+            <article class="card">
+              <h3 id="algo-notes-heading">A basic calculator</h3>
+              <p>A small application for calculating college accademic stuffs, built to practice JavaScript events
+                and DOM elements .</p>
+              <ul class="tag-list" aria-label="Technologies used">
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+              <a class="card__link" href="projects.html#campus-events">Read more about this project</a>
+            </article>
+          </li>
+
+          <li>
+            <article class="card">
+              <h3 id="algo-notes-heading">Wheather application</h3>
+              <p>A lightweight tool for monitoring and checking wheather report, with a keyboard-friendly interface and
+                API integration.</p>
+              <ul class="tag-list" aria-label="Technologies used">
+                <li>JavaScript</li>
+                <li>API</li>
+              </ul>
+              <a class="card__link" href="https://github.com/sandeshbodekar/wheatherApp">Read more about this project</a>
+            </article>
+          </li>
+
+          <li>
+            <article class="card" id="algo-notes" aria-labelledby="algo-notes-heading">
+              <h3 id="algo-notes-heading">Air BNB Clone</h3>
+              <p>
+                A static reference site of worked examples from my learnings 
+                 — JS, nodeJS, react and express— with runnable
+                code snippets and deployed on Render service.
+              </p>
+              <ul class="tag-list" aria-label="Technologies used">
+                <li>JS & nodeJS</li>
+                <li>React</li>
+                <li>Express</li>
+              </ul>
+              <a class="card__link" href="https://github.com/sandeshbodekar/MajorProject">
+                View source on GitHub
+                <span class="visually-hidden">for Air BNN website</span>
+              </a>
+            </article>
+          </li>
+
+          <li>
+            <article class="card" id="this-site" aria-labelledby="this-site-heading">
+              <h3 id="this-site-heading">This Portfolio</h3>
+              <p>
+                The site you're on now: a multi-page personal portfolio built
+                around semantic HTML5 landmarks, ARIA labelling, SEO meta
+                tags, and a fully keyboard-navigable contact form.
+              </p>
+              <ul class="tag-list" aria-label="Technologies used">
+                <li>HTML5</li>
+                <li>ARIA</li>
+                <li>SEO</li>
+              </ul>
+              <a class="card__link" href="https://github.com/example/portfolio">
+                View source on GitHub
+                <span class="visually-hidden">for this portfolio site</span>
+              </a>
+            </article>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+ <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-nav" aria-label="Footer">
+        <small>&copy; 2026 Sandesh Bodekar &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Made with<span class="heart">
+            &hearts;</span></small>
+      </div>
+      <nav class="footer-social" aria-label="Social media">
+        <ul>
+          <li><a href="https://github.com/sandeshbodekar">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/sandeshbodekar">LinkedIn</a></li>
+          <li><a href="mailto:sandeshbodekar12@gmail.com">Email</a></li>
+        </ul>
+      </nav>
+    </div>
+
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
