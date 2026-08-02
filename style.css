@@ -689,3 +689,26 @@ legend {
 .photo {
   border-radius: 50%;
 }
+
+.header-controls {
+  grid-area: controls;
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+/* Dark theme overrides when `data-theme="dark"` is set on <html> */
+html[data-theme="dark"] {
+  --color-bg: #0b0f14;
+  --color-surface: #0f1720;
+  --color-border: #1f2a33;
+  --color-border-strong: #2a3a44;
+  --color-ink: #e6eef7;
+  --color-ink-soft: #bfcad3;
+  --color-accent: #58a6ff;
+  --color-accent-ink: #cfe3ff;
+  --color-accent-soft: #071428;
+  --color-gold: #b98b3a;
+  --color-sage: #7ba07a;
+  --color-focus: #ffb86b;
+}

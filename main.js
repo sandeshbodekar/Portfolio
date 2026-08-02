@@ -3,7 +3,44 @@
  * Progressive enhancement only — every page must remain usable,
  * navigable, and submittable with this file absent or blocked.
  */
-(function () {
+
+ (function () {
+  "use strict";
+
+  /* ---------------------------------------------------------
+     Dark / light theme toggle
+     The <head> inline script already set the initial
+     data-theme attribute before paint (reading localStorage,
+     falling back to the OS preference). This just wires up
+     the button to flip and persist the choice.
+     --------------------------------------------------------- */
+     
+  var themeToggle = document.getElementById("theme-toggle");
+  if (themeToggle) {
+    var syncPressedState = function () {
+      var isDark = document.documentElement.getAttribute("data-theme") === "dark";
+      themeToggle.setAttribute("aria-pressed", String(isDark));
+    };
+    syncPressedState();
+
+    themeToggle.addEventListener("click", function () {
+      var isDark = document.documentElement.getAttribute("data-theme") === "dark";
+      if (isDark) {
+        document.documentElement.removeAttribute("data-theme");
+        try {
+          localStorage.setItem("theme", "light");
+        } catch (e) {}
+      } else {
+        document.documentElement.setAttribute("data-theme", "dark");
+        try {
+          localStorage.setItem("theme", "dark");
+        } catch (e) {}
+      }
+      syncPressedState();
+    });
+  }
+
+ 
   "use strict";
 
   /* ---------------------------------------------------------
